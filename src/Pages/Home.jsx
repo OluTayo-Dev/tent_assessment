@@ -4,6 +4,7 @@ import logo from "../assets/logo.png"
 import profile from "../assets/profile.png"
 import {useState} from "react"
 import "../css/Home.css"
+import "../css/Dropdown.css"
 import { BsTools } from "react-icons/bs"
 import { TfiTruck } from "react-icons/tfi";
 import { PiFolderBold } from "react-icons/pi"
@@ -53,7 +54,7 @@ export default function Home() {
                   To maximize your visit here, you can explore the different categories of products and services available by clicking the sidebar or alternatively search any product by name, location from which you desire to purchase the products or the destination for delivery. Have fun!</p>
 
                  <div className="flex  md:flex gap-2 mt-5">
-                    <div className="w-[16.3vw] h-[30vh] bg-white shadow-lg">
+                    <div className="box-2 w-[16.3vw] h-[30vh] bg-white shadow-lg">
                     <TfiTruck className="xl:ml-[6rem] lg:ml-[4rem] md:ml-[3rem] text-blue-600 text-[2rem] mt-5" />
                      <p className="font-semibold text-lg text-center pt-2">Order Online</p>
                      <p className="text-center xl:text-xl lg:text-sm font-extralight p-2">
@@ -69,7 +70,7 @@ export default function Home() {
 
                     </div>
 
-                    <div className=" box-2 w-[16.3vw] h-[30vh] bg-white shadow-lg">
+                    <div className="box-2 w-[16.3vw] h-[30vh] bg-white shadow-lg">
                     <HiOutlineArrowPath className="xl:ml-[6rem] lg:ml-[4rem] md:ml-[3rem] text-blue-600 text-[2rem] mt-5"/>
                         <p className="font-semibold text-lg text-center pt-2">Easy Return.</p>
                         <p className="text-center xl:text-xl lg:text-sm font-extralight p-2 lg:p-1">
@@ -91,7 +92,7 @@ export default function Home() {
 
                      </div>
 
-                     <div className=" box-1 w-[16.3vw]  h-[30vh] bg-white shadow-lg">
+                     <div className="box-1 w-[16.3vw]  h-[30vh] bg-white shadow-lg">
                         <p className="font-bold text-lg">Order Online</p>
 
                     </div>
@@ -106,31 +107,33 @@ export default function Home() {
                        xl:space-y-12 lg:space-y-10 md:space-y-14">
                            
                           <div className="image-one xl:lg:w-[15vw] h-[30vh] bg-slate-300 xl:mt-12 lg:mt-10 md:mt-14">
-                            <p className="font-semibold xl:pt-[15rem] lg:pt-[11.5rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Female Wedding Gown</p>
-                            <p className="text-sm">Classy and Fashionable</p>
+                            
+                              <p className="product-one font-semibold xl:-mt-[14.1rem] lg:pt-[29rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Female Wedding Gown</p>
+                              <p className="text-sm">Classy and Fashionable</p>
+                            
                           </div>
 
                            <div className="image-two xl:w-[15vw] h-[30vh] bg-slate-300">
-                            <p className="font-semibold xl:pt-[15rem] lg:pt-[11.5rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Men Suit</p>
+                            <p className="product-two font-semibold xl:-mt-[14.1rem] lg:pt-[29rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Men Suit</p>
                             <p className="text-sm">Smart and Exquisite</p>
                            </div>
                            <div className="image-three xl:lg:w-[15vw] h-[30vh] bg-slate-300">
-                            <p className="font-semibold xl:pt-[15rem] lg:pt-[11.5rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Red Wine</p>
+                            <p className="product-three font-semibold xl:-mt-[14.1rem] lg:pt-[29rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Red Wine</p>
                             <p className="text-sm">Non Alcoholic</p>
                            </div>
 
                            <div className="image-four xl:lg:w-[15vw] h-[30vh] bg-slate-300">
-                            <p className="font-semibold xl:pt-[15rem] lg:pt-[11.5rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Men Perfume</p>
+                            <p className="product-four font-semibold xl:-mt-[14.1rem] lg:pt-[29rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Men Perfume</p>
                             <p className="text-sm">Escorbic scent</p>
                            </div>
 
                            <div className="image-five xl:lg:w-[15vw] h-[30vh] bg-slate-300">
-                            <p className="font-semibold xl:pt-[15rem] lg:pt-[11.5rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Jollof Rice and Plantain</p>
+                            <p className="product-five font-semibold xl:-mt-[14.1rem] lg:pt-[29rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm cursor-pointer">Jollof Rice and Plantain</p>
                             <p className="text-sm">Food mataz</p>
                            </div>
 
                            <div className="image-six xl:lg:w-[15vw] h-[30vh] bg-slate-300">
-                            <p className="font-semibold xl:pt-[15rem] lg:pt-[11.5rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm">Roasted Full Chicken</p>
+                            <p className="product-six font-semibold xl:-mt-[14.1rem] lg:pt-[29rem] md:pt-[26.3rem] xl:text-[16px] lg:text-sm">Roasted Full Chicken</p>
                             <p className="text-sm">Chicken Republic</p>
                            </div>
                        </div>
@@ -185,28 +188,28 @@ export default function Home() {
 
                    <div className="flex flex-col  space-y-6 mt-5 ml-3">
                       <div className="w-[95%] h-[25vh] bg-white shadow-lg">
-                        <TfiTruck className="ml-[10rem] mt-4 text-blue-600 text-[2rem]" />
+                        <TfiTruck className="icon-one ml-[10rem] mt-4 text-blue-600 text-[2rem]" />
                          <p className="font-semibold text-center text-lg">Order Online</p>
                          <p className="text-center font-extralight text-lg">Order for any products advertised from the comfort of your home</p>
 
                         </div>
 
                         <div className="w-[95%] h-[25vh] bg-white shadow-lg">
-                          <PiFolderBold className="ml-[10rem] mt-4 text-blue-600 text-[2rem]" />
+                          <PiFolderBold className="icon ml-[10rem] mt-4 text-blue-600 text-[2rem]" />
                          <p className="font-semibold text-center text-lg">Pay on Delivery</p>
                          <p className="text-center font-extralight text-lg">Pay after confirming the state of your order.</p>
 
                         </div>
 
                         <div className="w-[95%] h-[25vh] bg-white shadow-lg">
-                        <HiOutlineArrowPath className="ml-[10rem] mt-4 text-blue-600 text-[2rem]" />
+                        <HiOutlineArrowPath className="icon ml-[10rem] mt-4 text-blue-600 text-[2rem]" />
                           <p className="font-semibold text-center text-lg">Easy Return</p>
                           <p className="text-center font-extralight text-lg">You can return any product that is damaged or faulty <h5 className="xl:text-sm  lg:text-[10px]">(terms & conditions applies)</h5></p>
 
                         </div>
                     
                         <div className="w-[95%] h-[25vh] bg-white shadow-lg">
-                        <BsTools className="ml-[10rem] mt-4 text-blue-600 text-[2rem]" />
+                        <BsTools className="icon ml-[10rem] mt-4 text-blue-600 text-[2rem]" />
                          <p className="font-semibold text-center text-lg">Maintenance Services Support</p>
                          <p className="text-center font-extralight text-lg">You can always come back for maintenance service and upgrades<h5 className="xl:text-sm lg:text-[10px]"> (terms & condition applies)</h5></p>
 
@@ -217,32 +220,32 @@ export default function Home() {
                   <h4 className="text-lg font-semibold pt-10 text-center text-yellow-900">Featured Products & Services</h4>
                <div className="grid grid-rows-3 grid-flow-col gap-2 ml-[3rem] mt-4 space-y-12">
                  <div className="image-one w-[30vw] h-[22vh] mt-12">
-                   <p className="font-bold text-[10px] cursor-pointer pt-[14rem]">Female Wedding Gown</p>
+                   <p className="product-one font-bold text-[10px] cursor-pointer mt-[13rem]">Female Wedding Gown</p>
                    <p className="text-[10px]">Classy and Fashionable</p>
                  </div>
 
                   <div className="image-two w-[30vw] h-[22vh]">
-                   <p className="font-bold text-[10px] cursor-pointer pt-[14rem]">Men Suit</p>
+                   <p className="product-two font-bold text-[10px] cursor-pointer mt-[13rem]">Men Suit</p>
                    <p className="text-[10px]">Smart and Exquisite</p>
                   </div>
 
                   <div className="image-three w-[30vw] h-[22vh]">
-                   <p className="font-bold text-[10px] cursor-pointer pt-[14rem]">Red Wine</p>
+                   <p className="product-three font-bold text-[10px] cursor-pointer mt-[13rem]">Red Wine</p>
                    <p className="text-[10px]">Non Alcoholic</p>
                   </div>
 
                   <div className="image-four w-[30vw] h-[22vh]">
-                   <p className="font-bold text-[10px] cursor-pointer pt-[14rem]">Male Perfume</p>
+                   <p className="product-three font-bold text-[10px] cursor-pointer mt-[13rem]">Male Perfume</p>
                    <p className="text-[10px]">Escorbic scent</p>
                   </div>
 
                   <div className="image-five w-[30vw] h-[22vh]">
-                   <p className="font-bold text-[10px] cursor-pointer pt-[14rem]">Jollof Rice and Plantain</p>
+                   <p className="product-five font-bold text-[10px] cursor-pointer mt-[13rem]">Jollof Rice and Plantain</p>
                    <p className="text-[10px]">Food mataz</p>
                   </div>
 
                   <div className="image-six w-[30vw] h-[22vh]">
-                   <p className="font-bold text-[10px] cursor-pointer pt-[14rem]">Roasted Full Chicken</p>
+                   <p className="product-six font-bold text-[10px] cursor-pointer mt-[13rem]">Roasted Full Chicken</p>
                    <p className="text-[10px]">Chicken Republic</p>
                   </div>
               </div>

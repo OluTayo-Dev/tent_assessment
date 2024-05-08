@@ -46,8 +46,9 @@
     color: rgb(108, 107, 107);
     cursor: pointer;
    }
+  
 
-
+   
    @media screen and (max-width: 500px) {
   
     .button{

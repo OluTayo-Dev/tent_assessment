@@ -6,6 +6,9 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaGlobe } from "react-icons/fa"
 import { PiShoppingCartFill } from "react-icons/pi";
 import { FaBriefcase } from "react-icons/fa"
+import { RiFacebookCircleFill } from "react-icons/ri"
+import { BsInstagram } from "react-icons/bs";
+import { FaTwitter } from "react-icons/fa";
 import MarketDropDown from "../Components/MarketDropDown"
 import { useState } from "react"
 import "../css/Home.css"
@@ -111,7 +114,55 @@ export default function Akinyele() {
 
                </section>
             </div>
+            <section className="mobile-view xl:lg:w-[55%] mt-5">
+                 <h1 className="text-center xl:lg:md:text-4xl text-xl  font-bold p-4 text-yellow-900">Merchants & Markets</h1>
+                 <p className="font-extralight p-2">Welcome to T'Enterprise e-mail MarketPlace, it is a place to visit all the different markets around you.</p>
+
+                 <p className="pt-2 font-extralight p-2">Our marketplace service allows you sell your products & services under the name of your market where your physical store is located making it easy for your customer's to reach you both online & offline</p>
+
+                 <div className="flex p-2">
+                    <div>
+
+                    </div>
+                    <div className="mt-[5rem]">
+                       <span>
+                         <h4 className="font-semibold text-lg text-yellow-900">Search Results:</h4>
+                         <p className="text-yellow-900 text-sm">Total of 1 Stores Found</p>
+                       </span>
+
+                       <span className="flex gap-1 mt-1 ml-3">
+                       <PiShoppingCartFill className="text-yellow-900 text-lg"/>
+                       <p className="font-semibold text-yellow-900">Akinyele Livestock Market</p>
+                       </span>
+                       <p className="text-yellow-900 text-sm ml-3">For Goat, Rams & Cows</p>
+                       <span className="flex gap-1 mt-1 ml-3"> 
+                         <FaBriefcase className="text-yellow-900 text-lg"/> 
+                         <p className="text-sm font-bold text-yellow-900">Mother & Child</p>
+                       </span>
+                    </div>
+                 </div>
+               </section>
         </section>
-    </div>
+
+    <footer className="bg-white min-h-[40vh] xl:lg:md:mt-3  mt-[30rem]">
+
+         <div className="flex xl:lg:space-x-24 space-x-4 xl:lg:md:mt-[10rem] mt-[12rem] justify-center xl:text-[20px] text-[10px] font-normal text-slate-400 cursor-pointer md:pt-20">
+             <span className="hover:text-black">eMall</span>
+             <span className="hover:text-black">Merchants & Markets</span>
+             <span className="hover:text-black">Job Search</span>
+             <span className="hover:text-black">Contact</span>
+             <span className="hover:text-black">Login</span>
+             <span className="hover:text-black">Register</span>
+           </div>
+
+           <div className="flex justify-center cursor-pointer text-[25px] gap-6 xl:lg:mt-4 mt-[5rem]">
+             <RiFacebookCircleFill  className="text-green-400"/>
+             <BsInstagram className="text-pink-600"/>
+             <FaTwitter className="text-blue-500"/>
+          </div>
+
+        <p className="text-center xl:text-lg text-[10px] text-slate-400 xl:pt-5 pt-[10rem]">&copy; 2024 All Right Reserved, T'Enterprise eMall.</p>
+   </footer>
+</div>
   )
 }
